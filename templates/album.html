@@ -8,7 +8,7 @@
             }
             </style>
     </head>
-    <body style="background-color:#DFDFDF;">
+    <body style="background-color:#DFDFDF;padding-bottom:10px;">
         <div class="content">
             <img width=500 src="{{album.image}}" />
             <h2>#{{album.rank}}: <i>{{ album.title }}</i> by {{ album.artist }}</h2>
@@ -17,10 +17,10 @@
                 <p>{{album.description}}</p>
             </div>
             <span style="float:left;">
-                <a href="/album/{{album.rank + 1}}">Previous album</a>
+                <a href="/album/{{album.rank + 1}}"><h4>< Previous album</h4></a>
             </span>
             <span style="float:right;">
-                <a href="/album/{{album.rank - 1}}">Next album</a>
+                <a href="/album/{{album.rank - 1}}"><h4>Next album ></h4></a>
             </span>
         </div>
     </body>
