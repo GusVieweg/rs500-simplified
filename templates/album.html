@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            .content {
+              max-width: 500px;
+              margin: auto;
+            }
+            </style>
+    </head>
+    <body style="background-color:#DFDFDF;">
+        <div class="content">
+            <img width=500 src="{{album.image}}" />
+            <h2>#{{album.rank}}: <i>{{ album.title }}</i> by {{ album.artist }}</h2>
+            <h6>{{album.label}}, {{album.year}}</h6>
+            <div style="max-width:500px;">
+                <p>{{album.description}}</p>
+            </div>
+            <span style="float:left;">
+                <a href="/album/{{album.rank + 1}}">Previous album</a>
+            </span>
+            <span style="float:right;">
+                <a href="/album/{{album.rank - 1}}">Next album</a>
+            </span>
+        </div>
+    </body>
+</html>
+
+
