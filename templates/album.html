@@ -16,16 +16,12 @@
             <div style="max-width:500px;">
                 <p>{{album.description}}</p>
             </div>
-            {% if album.rank > 500 %}
-                <span style="float:left;">
-                    <a href="/album/{{album.rank + 1}}"><h2>< Previous album</h2></a>
-                </span>
-            {% endif %}
-            {% if album.rank < 1 %}
-                <span style="float:right;">
-                    <a href="/album/{{album.rank - 1}}"><h2>Next album ></h2></a>
-                </span>
-            {% endif %}
+            <span style="float:left;">
+                <a href="/album/{{album.rank + 1}}"><h2>< Previous album</h2></a>
+            </span>
+            <span style="float:right;">
+                <a href="/album/{{album.rank - 1}}"><h2>Next album ></h2></a>
+            </span>
         </div>
     </body>
 </html>
